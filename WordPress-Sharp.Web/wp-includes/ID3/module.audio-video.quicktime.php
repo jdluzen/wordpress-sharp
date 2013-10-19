@@ -611,13 +611,6 @@ class getid3_quicktime extends getid3_handler
 				break;
 
 
-			case 'rmla': // Reference Movie Language Atom
-				$atom_structure['version']   = getid3_lib::BigEndian2Int(substr($atom_data,  0, 1));
-				$atom_structure['flags_raw'] = getid3_lib::BigEndian2Int(substr($atom_data,  1, 3)); // hardcoded: 0x0000
-				$atom_structure['track_id']  = getid3_lib::BigEndian2Int(substr($atom_data,  4, 2));
-				break;
-
-
 			case 'ptv ': // Print To Video - defines a movie's full screen mode
 				// http://developer.apple.com/documentation/QuickTime/APIREF/SOURCESIV/at_ptv-_pg.htm
 				$atom_structure['display_size_raw']  = getid3_lib::BigEndian2Int(substr($atom_data, 0, 2));

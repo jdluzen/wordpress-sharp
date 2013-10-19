@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{A0786B88-2ADB-4C21-ABE8-AA2D79766269}") = "WordPress-Sharp.Web", "WordPress-Sharp.Web\WordPress-Sharp.Web.phpproj", "{02C2F34D-7DC8-49A2-8D78-5893BFB1CFD4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02C2F34D-7DC8-49A2-8D78-5893BFB1CFD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02C2F34D-7DC8-49A2-8D78-5893BFB1CFD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02C2F34D-7DC8-49A2-8D78-5893BFB1CFD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02C2F34D-7DC8-49A2-8D78-5893BFB1CFD4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

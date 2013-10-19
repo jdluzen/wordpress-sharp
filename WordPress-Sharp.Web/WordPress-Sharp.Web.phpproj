@@ -1,0 +1,3292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>WordPress_Sharp.Web</Name>
+    <ProjectGuid>{02c2f34d-7dc8-49a2-8d78-5893bfb1cfd4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WordPress_Sharp.Web</RootNamespace>
+    <!-- important to be opened by PHP Tools, when also Phalanger Tools are installed -->
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <AssemblyName>WordPress-Sharp.Web</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="index.php" />
+    <Compile Include="wp-activate.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\about.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\admin-ajax.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\admin-footer.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\admin-functions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\admin-header.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\admin-post.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\admin.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\async-upload.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\comment.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\credits.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\custom-background.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\custom-header.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\customize.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\edit-comments.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\edit-form-advanced.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\edit-form-comment.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\edit-link-form.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\edit-tag-form.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\edit-tags.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\edit.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\export.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\freedoms.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\import.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\admin.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\ajax-actions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\bookmark.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\class-ftp-pure.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\class-ftp-sockets.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\class-ftp.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\class-pclzip.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\class-wp-comments-list-table.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\class-wp-filesystem-base.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\class-wp-filesystem-direct.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\class-wp-filesystem-ftpext.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\class-wp-filesystem-ftpsockets.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\class-wp-filesystem-ssh2.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\class-wp-importer.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\class-wp-links-list-table.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\class-wp-list-table.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\class-wp-media-list-table.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\class-wp-ms-sites-list-table.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\class-wp-ms-themes-list-table.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\class-wp-ms-users-list-table.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\class-wp-plugin-install-list-table.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\class-wp-plugins-list-table.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\class-wp-posts-list-table.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\class-wp-terms-list-table.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\class-wp-theme-install-list-table.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\class-wp-themes-list-table.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\class-wp-upgrader.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\class-wp-users-list-table.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\comment.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\continents-cities.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\dashboard.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\deprecated.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\export.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\file.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\image-edit.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\image.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\import.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\list-table.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\media.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\menu.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\meta-boxes.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\misc.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\ms-deprecated.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\ms.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\nav-menu.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\plugin-install.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\plugin.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\post.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\revision.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\schema.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\screen.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\taxonomy.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\template.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\theme-install.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\theme.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\update-core.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\update.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\upgrade.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\user.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\includes\widgets.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\index.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\install-helper.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\install.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\link-add.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\link-manager.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\link-parse-opml.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\link.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\load-scripts.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\load-styles.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\maint\repair.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\media-new.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\media-upload.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\media.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\menu-header.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\menu.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\moderation.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\ms-admin.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\ms-delete-site.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\ms-edit.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\ms-options.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\ms-sites.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\ms-themes.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\ms-upgrade-network.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\ms-users.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\my-sites.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\nav-menus.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\network.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\network\about.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\network\admin.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\network\credits.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\network\edit.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\network\freedoms.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\network\index.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\network\menu.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\network\plugin-editor.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\network\plugin-install.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\network\plugins.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\network\profile.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\network\settings.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\network\setup.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\network\site-info.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\network\site-new.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\network\site-settings.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\network\site-themes.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\network\site-users.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\network\sites.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\network\theme-editor.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\network\theme-install.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\network\themes.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\network\update-core.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\network\update.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\network\upgrade.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\network\user-edit.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\network\user-new.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\network\users.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\options-discussion.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\options-general.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\options-head.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\options-media.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\options-permalink.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\options-reading.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\options-writing.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\options.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\plugin-editor.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\plugin-install.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\plugins.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\post-new.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\post.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\press-this.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\profile.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\revision.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\setup-config.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\theme-editor.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\theme-install.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\themes.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\tools.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\update-core.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\update.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\upgrade-functions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\upgrade.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\upload.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\user-edit.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\user-new.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\users.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\user\about.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\user\admin.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\user\credits.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\user\freedoms.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\user\index.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\user\menu.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\user\profile.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\user\user-edit.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-admin\widgets.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-blog-header.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-comments-post.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-config-sample.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\index.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\plugins\akismet\admin.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\plugins\akismet\akismet.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\plugins\akismet\index.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\plugins\akismet\legacy.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\plugins\akismet\widget.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\plugins\hello.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\plugins\index.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\index.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\404.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\archive.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\author-bio.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\author.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\category.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\comments.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\content-aside.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\content-audio.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\content-chat.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\content-gallery.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\content-image.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\content-link.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\content-none.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\content-quote.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\content-status.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\content-video.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\content.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\footer.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\functions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\header.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\image.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\inc\back-compat.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\inc\custom-header.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\index.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\page.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\search.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\sidebar-main.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\sidebar.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\single.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\tag.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentythirteen\taxonomy-post_format.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentytwelve\404.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentytwelve\archive.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentytwelve\author.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentytwelve\category.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentytwelve\comments.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentytwelve\content-aside.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentytwelve\content-image.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentytwelve\content-link.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentytwelve\content-none.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentytwelve\content-page.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentytwelve\content-quote.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentytwelve\content-status.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentytwelve\content.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentytwelve\footer.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentytwelve\functions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentytwelve\header.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentytwelve\image.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentytwelve\inc\custom-header.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentytwelve\index.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentytwelve\page-templates\front-page.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentytwelve\page-templates\full-width.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentytwelve\page.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentytwelve\search.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentytwelve\sidebar-front.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentytwelve\sidebar.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentytwelve\single.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-content\themes\twentytwelve\tag.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-cron.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\admin-bar.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\atomlib.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\author-template.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\bookmark-template.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\bookmark.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\cache.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\canonical.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\capabilities.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\category-template.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\category.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class-feed.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class-http.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class-IXR.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class-json.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class-oembed.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class-phpass.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class-phpmailer.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class-pop3.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class-simplepie.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class-smtp.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class-snoopy.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class-wp-admin-bar.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class-wp-ajax-response.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class-wp-customize-control.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class-wp-customize-manager.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class-wp-customize-section.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class-wp-customize-setting.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class-wp-editor.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class-wp-embed.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class-wp-error.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class-wp-http-ixr-client.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class-wp-image-editor-gd.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class-wp-image-editor-imagick.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class-wp-image-editor.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class-wp-theme.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class-wp-walker.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class-wp-xmlrpc-server.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class-wp.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class.wp-dependencies.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class.wp-scripts.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\class.wp-styles.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\comment-template.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\comment.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\compat.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\cron.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\default-constants.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\default-filters.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\default-widgets.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\deprecated.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\feed-atom-comments.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\feed-atom.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\feed-rdf.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\feed-rss.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\feed-rss2-comments.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\feed-rss2.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\feed.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\formatting.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\functions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\functions.wp-scripts.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\functions.wp-styles.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\general-template.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\http.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\ID3\getid3.lib.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\ID3\getid3.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\ID3\module.audio-video.asf.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\ID3\module.audio-video.flv.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\ID3\module.audio-video.matroska.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\ID3\module.audio-video.quicktime.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\ID3\module.audio-video.riff.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\ID3\module.audio.ac3.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\ID3\module.audio.dts.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\ID3\module.audio.flac.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\ID3\module.audio.mp3.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\ID3\module.audio.ogg.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\ID3\module.tag.apetag.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\ID3\module.tag.id3v1.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\ID3\module.tag.id3v2.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\ID3\module.tag.lyrics3.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\js\tinymce\langs\wp-langs.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\js\tinymce\plugins\spellchecker\classes\EnchantSpell.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\js\tinymce\plugins\spellchecker\classes\GoogleSpell.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\js\tinymce\plugins\spellchecker\classes\PSpell.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\js\tinymce\plugins\spellchecker\classes\PSpellShell.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\js\tinymce\plugins\spellchecker\classes\SpellChecker.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\js\tinymce\plugins\spellchecker\classes\utils\JSON.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\js\tinymce\plugins\spellchecker\classes\utils\Logger.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\js\tinymce\plugins\spellchecker\config.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\js\tinymce\plugins\spellchecker\includes\general.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\js\tinymce\plugins\spellchecker\rpc.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\js\tinymce\wp-mce-help.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\js\tinymce\wp-tinymce.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\kses.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\l10n.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\link-template.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\load.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\locale.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\media-template.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\media.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\meta.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\ms-blogs.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\ms-default-constants.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\ms-default-filters.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\ms-deprecated.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\ms-files.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\ms-functions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\ms-load.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\ms-settings.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\nav-menu-template.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\nav-menu.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\option.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\pluggable-deprecated.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\pluggable.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\plugin.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\pomo\entry.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\pomo\mo.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\pomo\po.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\pomo\streams.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\pomo\translations.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\post-formats.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\post-template.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\post-thumbnail-template.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\post.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\query.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\registration-functions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\registration.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\revision.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\rewrite.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\rss-functions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\rss.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\script-loader.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\shortcodes.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\Author.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\Cache.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\Cache\Base.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\Cache\DB.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\Cache\File.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\Cache\Memcache.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\Cache\MySQL.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\Caption.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\Category.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\Content\Type\Sniffer.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\Copyright.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\Core.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\Credit.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\Decode\HTML\Entities.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\Enclosure.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\Exception.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\File.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\gzdecode.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\HTTP\Parser.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\IRI.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\Item.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\Locator.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\Misc.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\Net\IPv6.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\Parser.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\Parse\Date.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\Rating.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\Registry.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\Restriction.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\Sanitize.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\Source.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\SimplePie\XML\Declaration\Parser.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\taxonomy.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\template-loader.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\template.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\Text\Diff.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\Text\Diff\Engine\native.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\Text\Diff\Engine\shell.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\Text\Diff\Engine\string.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\Text\Diff\Engine\xdiff.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\Text\Diff\Renderer.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\Text\Diff\Renderer\inline.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\theme-compat\comments-popup.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\theme-compat\comments.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\theme-compat\footer.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\theme-compat\header.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\theme-compat\sidebar.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\theme.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\update.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\user.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\vars.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\version.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\widgets.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\wp-db.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-includes\wp-diff.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-links-opml.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-load.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-login.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-mail.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-settings.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-signup.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="wp-trackback.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="xmlrpc.php">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="license.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="readme.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\css\color-picker-rtl.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\css\color-picker-rtl.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\css\color-picker.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\css\color-picker.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\css\colors-classic.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\css\colors-classic.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\css\colors-fresh.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\css\colors-fresh.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\css\customize-controls-rtl.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\css\customize-controls-rtl.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\css\customize-controls.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\css\customize-controls.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\css\farbtastic.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\css\ie-rtl.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\css\ie-rtl.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\css\ie.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\css\ie.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\css\install.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\css\install.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\css\media-rtl.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\css\media-rtl.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\css\media.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\css\media.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\css\wp-admin-rtl.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\css\wp-admin-rtl.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\css\wp-admin.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\css\wp-admin.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\align-center-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\align-center.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\align-left-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\align-left.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\align-none-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\align-none.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\align-right-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\align-right.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\arrows-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\arrows-dark-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\arrows-dark-vs-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\arrows-dark-vs.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\arrows-dark.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\arrows-pr-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\arrows-pr.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\arrows-vs-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\arrows-vs.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\arrows.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\bubble_bg-2x.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\bubble_bg-rtl-2x.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\bubble_bg-rtl.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\bubble_bg.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\comment-grey-bubble-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\comment-grey-bubble.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\date-button-2x.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\date-button.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\generic.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\icons32-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\icons32-vs-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\icons32-vs.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\icons32.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\imgedit-icons-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\imgedit-icons.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\list-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\list.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\loading.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\lock-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\lock.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\marker.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\mask.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\media-button-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\media-button-image.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\media-button-music.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\media-button-other.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\media-button-video.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\media-button.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\menu-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\menu-shadow-rtl.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\menu-shadow.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\menu-vs-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\menu-vs.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\menu.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\no.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\post-formats-vs.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\post-formats.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\post-formats32-vs.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\post-formats32.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\press-this-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\press-this.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\resize-2x.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\resize-rtl-2x.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\resize-rtl.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\resize.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\se.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\sort-2x.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\sort.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\stars-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\stars-rtl-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\stars-rtl.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\stars.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\welcome-icons-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\welcome-icons.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\wheel.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\wordpress-logo-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\wordpress-logo.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\wp-badge-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\wp-badge.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\wp-logo-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\wp-logo-vs-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\wp-logo-vs.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\wp-logo.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\wpspin_light-2x.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\wpspin_light.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\xit-2x.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\xit.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\yes.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\accordion.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\accordion.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\cat.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\cat.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\color-picker.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\color-picker.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\comment.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\comment.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\common.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\common.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\custom-background.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\custom-background.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\custom-header.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\customize-controls.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\customize-controls.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\dashboard.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\dashboard.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\edit-comments.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\edit-comments.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\editor.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\editor.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\farbtastic.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\gallery.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\gallery.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\image-edit.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\image-edit.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\inline-edit-post.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\inline-edit-post.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\inline-edit-tax.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\inline-edit-tax.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\iris.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\link.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\link.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\media-gallery.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\media-gallery.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\media-upload.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\media-upload.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\media.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\media.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\nav-menu.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\nav-menu.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\password-strength-meter.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\password-strength-meter.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\plugin-install.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\plugin-install.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\post.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\post.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\postbox.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\postbox.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\revisions.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\revisions.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\set-post-thumbnail.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\set-post-thumbnail.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\tags.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\tags.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\theme-preview.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\theme-preview.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\theme.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\theme.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\user-profile.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\user-profile.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\user-suggest.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\user-suggest.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\widgets.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\widgets.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\word-count.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\word-count.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\wp-fullscreen.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\wp-fullscreen.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\xfn.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\xfn.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\plugins\akismet\akismet.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\plugins\akismet\akismet.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\plugins\akismet\akismet.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\plugins\akismet\img\logo%402x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\plugins\akismet\img\logo.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\plugins\akismet\readme.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentythirteen\css\editor-style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentythirteen\css\ie.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentythirteen\fonts\COPYING.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentythirteen\fonts\genericons-regular-webfont.eot">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentythirteen\fonts\genericons-regular-webfont.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentythirteen\fonts\genericons-regular-webfont.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentythirteen\fonts\genericons-regular-webfont.woff">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentythirteen\fonts\genericons.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentythirteen\fonts\LICENSE.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentythirteen\images\dotted-line-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentythirteen\images\dotted-line-light-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentythirteen\images\dotted-line-light.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentythirteen\images\dotted-line.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentythirteen\images\headers\circle-thumbnail.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentythirteen\images\headers\circle.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentythirteen\images\headers\diamond-thumbnail.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentythirteen\images\headers\diamond.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentythirteen\images\headers\star-thumbnail.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentythirteen\images\headers\star.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentythirteen\images\search-icon-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentythirteen\images\search-icon.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentythirteen\js\functions.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentythirteen\js\html5.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentythirteen\js\theme-customizer.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentythirteen\languages\twentythirteen.pot">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentythirteen\rtl.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentythirteen\screenshot.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentythirteen\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentytwelve\css\ie.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentytwelve\editor-style-rtl.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentytwelve\editor-style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentytwelve\js\html5.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentytwelve\js\navigation.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentytwelve\js\theme-customizer.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentytwelve\languages\twentytwelve.pot">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentytwelve\rtl.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentytwelve\screenshot.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-content\themes\twentytwelve\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\css\admin-bar-rtl.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\css\admin-bar-rtl.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\css\admin-bar.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\css\admin-bar.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\css\buttons.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\css\buttons.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\css\editor.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\css\editor.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\css\jquery-ui-dialog.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\css\jquery-ui-dialog.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\css\media-views-rtl.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\css\media-views-rtl.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\css\media-views.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\css\media-views.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\css\wp-auth-check.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\css\wp-auth-check.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\css\wp-pointer.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\css\wp-pointer.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\ID3\license.commercial.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\ID3\license.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\ID3\readme.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\admin-bar-sprite-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\admin-bar-sprite.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\arrow-pointer-blue-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\arrow-pointer-blue.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\blank.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\crystal\archive.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\crystal\audio.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\crystal\code.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\crystal\default.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\crystal\document.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\crystal\interactive.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\crystal\license.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\crystal\spreadsheet.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\crystal\text.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\crystal\video.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\down_arrow-2x.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\down_arrow.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\icon-pointer-flag-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\icon-pointer-flag.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\rss-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\rss.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\smilies\icon_arrow.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\smilies\icon_biggrin.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\smilies\icon_confused.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\smilies\icon_cool.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\smilies\icon_cry.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\smilies\icon_eek.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\smilies\icon_evil.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\smilies\icon_exclaim.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\smilies\icon_idea.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\smilies\icon_lol.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\smilies\icon_mad.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\smilies\icon_mrgreen.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\smilies\icon_neutral.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\smilies\icon_question.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\smilies\icon_razz.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\smilies\icon_redface.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\smilies\icon_rolleyes.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\smilies\icon_sad.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\smilies\icon_smile.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\smilies\icon_surprised.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\smilies\icon_twisted.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\smilies\icon_wink.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\toggle-arrow-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\toggle-arrow.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\uploader-icons-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\uploader-icons.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\wlw\wp-comments.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\wlw\wp-icon.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\wlw\wp-watermark.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\wpicons-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\wpicons.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\wpmini-blue-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\wpmini-blue.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\wpspin-2x.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\wpspin.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\xit-2x.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\images\xit.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\admin-bar.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\admin-bar.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\autosave.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\autosave.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\backbone.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\colorpicker.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\colorpicker.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\comment-reply.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\comment-reply.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\crop\cropper.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\crop\cropper.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\crop\marqueeHoriz.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\crop\marqueeVert.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\customize-base.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\customize-base.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\customize-loader.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\customize-loader.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\customize-preview.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\customize-preview.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\heartbeat.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\heartbeat.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\hoverIntent.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\hoverIntent.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\imgareaselect\border-anim-h.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\imgareaselect\border-anim-v.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\imgareaselect\imgareaselect.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\imgareaselect\jquery.imgareaselect.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\imgareaselect\jquery.imgareaselect.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jcrop\Jcrop.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jcrop\jquery.Jcrop.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jcrop\jquery.Jcrop.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\jquery-migrate.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\jquery-migrate.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\jquery.color.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\jquery.form.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\jquery.form.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\jquery.hotkeys.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\jquery.hotkeys.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\jquery.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\jquery.masonry.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\jquery.query.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\jquery.schedule.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\jquery.serialize-object.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\jquery.table-hotkeys.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\jquery.table-hotkeys.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\jquery.ui.touch-punch.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\suggest.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\suggest.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.accordion.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.autocomplete.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.button.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.core.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.datepicker.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.dialog.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.draggable.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.droppable.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.effect-blind.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.effect-bounce.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.effect-clip.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.effect-drop.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.effect-explode.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.effect-fade.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.effect-fold.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.effect-highlight.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.effect-pulsate.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.effect-scale.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.effect-shake.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.effect-slide.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.effect-transfer.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.effect.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.menu.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.mouse.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.position.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.progressbar.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.resizable.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.selectable.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.slider.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.sortable.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.spinner.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.tabs.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.tooltip.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\jquery\ui\jquery.ui.widget.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\json2.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\json2.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\mce-view.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\mce-view.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\media-editor.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\media-editor.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\media-models.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\media-models.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\media-views.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\media-views.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\mediaelement\background.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\mediaelement\bigplay.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\mediaelement\bigplay.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\mediaelement\controls.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\mediaelement\controls.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\mediaelement\flashmediaelement.swf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\mediaelement\loading.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\mediaelement\mediaelement-and-player.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\mediaelement\mediaelementplayer.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\mediaelement\silverlightmediaelement.xap">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\mediaelement\wp-mediaelement.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\mediaelement\wp-mediaelement.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\plupload\changelog.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\plupload\handlers.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\plupload\handlers.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\plupload\license.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\plupload\plupload.flash.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\plupload\plupload.flash.swf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\plupload\plupload.html4.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\plupload\plupload.html5.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\plupload\plupload.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\plupload\plupload.silverlight.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\plupload\plupload.silverlight.xap">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\plupload\wp-plupload.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\plupload\wp-plupload.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\quicktags.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\quicktags.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\shortcode.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\shortcode.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\swfobject.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\swfupload\handlers.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\swfupload\handlers.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\swfupload\license.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\swfupload\plugins\swfupload.cookies.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\swfupload\plugins\swfupload.queue.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\swfupload\plugins\swfupload.speed.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\swfupload\plugins\swfupload.swfobject.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\swfupload\swfupload.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\swfupload\swfupload.swf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\thickbox\loadingAnimation.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\thickbox\macFFBgHack.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\thickbox\tb-close-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\thickbox\tb-close.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\thickbox\thickbox.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\thickbox\thickbox.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\langs\wp-langs-en.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\license.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\mark_loaded_src.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\directionality\editor_plugin.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\directionality\editor_plugin_src.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\fullscreen\editor_plugin.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\fullscreen\editor_plugin_src.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\fullscreen\fullscreen.htm">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\inlinepopups\editor_plugin.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\inlinepopups\editor_plugin_src.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\inlinepopups\skins\clearlooks2\img\alert.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\inlinepopups\skins\clearlooks2\img\button.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\inlinepopups\skins\clearlooks2\img\buttons.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\inlinepopups\skins\clearlooks2\img\confirm.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\inlinepopups\skins\clearlooks2\img\corners.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\inlinepopups\skins\clearlooks2\img\drag.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\inlinepopups\skins\clearlooks2\img\horizontal.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\inlinepopups\skins\clearlooks2\img\vertical.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\inlinepopups\skins\clearlooks2\window.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\inlinepopups\template.htm">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\media\css\media.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\media\editor_plugin.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\media\editor_plugin_src.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\media\js\embed.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\media\js\media.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\media\media.htm">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\media\moxieplayer.swf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\paste\editor_plugin.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\paste\editor_plugin_src.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\paste\js\pastetext.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\paste\js\pasteword.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\paste\pastetext.htm">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\paste\pasteword.htm">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\spellchecker\changelog.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\spellchecker\css\content.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\spellchecker\editor_plugin.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\spellchecker\editor_plugin_src.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\spellchecker\img\wline.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\tabfocus\editor_plugin.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\tabfocus\editor_plugin_src.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wordpress\editor_plugin.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wordpress\editor_plugin_src.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wordpress\img\audio.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wordpress\img\image.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wordpress\img\media.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wordpress\img\page.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wordpress\img\trans.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wordpress\img\video.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wpdialogs\editor_plugin.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wpdialogs\editor_plugin_src.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wpdialogs\js\popup.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wpdialogs\js\popup.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wpdialogs\js\wpdialog.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wpdialogs\js\wpdialog.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wpeditimage\css\editimage.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wpeditimage\editimage.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wpeditimage\editor_plugin.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wpeditimage\editor_plugin_src.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wpeditimage\img\delete-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wpeditimage\img\delete.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wpeditimage\img\image-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wpeditimage\img\image.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wpeditimage\js\editimage.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wpeditimage\js\editimage.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wpfullscreen\css\wp-fullscreen.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wpfullscreen\editor_plugin.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wpfullscreen\editor_plugin_src.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wpgallery\editor_plugin.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wpgallery\editor_plugin_src.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wpgallery\img\delete-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wpgallery\img\delete.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wpgallery\img\edit-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wpgallery\img\edit.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wpgallery\img\t.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wplink\editor_plugin.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wplink\editor_plugin_src.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wpview\editor_plugin.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\plugins\wpview\editor_plugin_src.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\about.htm">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\anchor.htm">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\charmap.htm">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\color_picker.htm">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\editor_template.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\editor_template_src.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\image.htm">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\img\colorpicker.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\img\flash.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\img\gotmoxie.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\img\icons.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\img\iframe.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\img\pagebreak.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\img\quicktime.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\img\realmedia.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\img\shockwave.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\img\trans.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\img\video.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\img\windowsmedia.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\js\about.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\js\anchor.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\js\charmap.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\js\color_picker.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\js\image.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\js\link.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\js\source_editor.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\link.htm">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\shortcuts.htm">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\skins\default\content.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\skins\default\dialog.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\skins\default\img\buttons.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\skins\default\img\items.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\skins\default\img\menu_arrow.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\skins\default\img\menu_check.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\skins\default\img\progress.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\skins\default\img\tabs.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\skins\default\ui.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\skins\highcontrast\content.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\skins\highcontrast\dialog.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\skins\highcontrast\ui.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\skins\o2k7\content.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\skins\o2k7\dialog.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\skins\o2k7\img\button_bg.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\skins\o2k7\img\button_bg_black.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\skins\o2k7\img\button_bg_silver.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\skins\o2k7\ui.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\skins\o2k7\ui_black.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\skins\o2k7\ui_silver.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\skins\wp_theme\content.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\skins\wp_theme\dialog.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\skins\wp_theme\img\embedded.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\skins\wp_theme\img\gallery.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\skins\wp_theme\img\more_bug.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\skins\wp_theme\img\page_bug.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\skins\wp_theme\img\tabs.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\themes\advanced\source_editor.htm">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\tiny_mce.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\tiny_mce_popup.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\utils\editable_selects.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\utils\form_utils.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\utils\mctabs.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\utils\validate.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\wp-tinymce-schema.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tinymce\wp-tinymce.js.gz">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tw-sack.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\tw-sack.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\underscore.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\utils.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\utils.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\wp-ajax-response.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\wp-ajax-response.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\wp-auth-check.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\wp-auth-check.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\wp-backbone.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\wp-backbone.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\wp-list-revisions.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\wp-list-revisions.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\wp-lists.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\wp-lists.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\wp-pointer.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\wp-pointer.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\wp-util.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\wp-util.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\wplink.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\wplink.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\wlwmanifest.xml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wp-admin" />
+    <Folder Include="wp-admin\css" />
+    <Folder Include="wp-admin\images" />
+    <Folder Include="wp-admin\includes" />
+    <Folder Include="wp-admin\js" />
+    <Folder Include="wp-admin\maint" />
+    <Folder Include="wp-admin\network" />
+    <Folder Include="wp-admin\user" />
+    <Folder Include="wp-content" />
+    <Folder Include="wp-content\plugins" />
+    <Folder Include="wp-content\plugins\akismet" />
+    <Folder Include="wp-content\plugins\akismet\img" />
+    <Folder Include="wp-content\themes" />
+    <Folder Include="wp-content\themes\twentythirteen" />
+    <Folder Include="wp-content\themes\twentythirteen\css" />
+    <Folder Include="wp-content\themes\twentythirteen\fonts" />
+    <Folder Include="wp-content\themes\twentythirteen\images" />
+    <Folder Include="wp-content\themes\twentythirteen\images\headers" />
+    <Folder Include="wp-content\themes\twentythirteen\inc" />
+    <Folder Include="wp-content\themes\twentythirteen\js" />
+    <Folder Include="wp-content\themes\twentythirteen\languages" />
+    <Folder Include="wp-content\themes\twentytwelve" />
+    <Folder Include="wp-content\themes\twentytwelve\css" />
+    <Folder Include="wp-content\themes\twentytwelve\inc" />
+    <Folder Include="wp-content\themes\twentytwelve\js" />
+    <Folder Include="wp-content\themes\twentytwelve\languages" />
+    <Folder Include="wp-content\themes\twentytwelve\page-templates" />
+    <Folder Include="wp-includes" />
+    <Folder Include="wp-includes\css" />
+    <Folder Include="wp-includes\ID3" />
+    <Folder Include="wp-includes\images" />
+    <Folder Include="wp-includes\images\crystal" />
+    <Folder Include="wp-includes\images\smilies" />
+    <Folder Include="wp-includes\images\wlw" />
+    <Folder Include="wp-includes\js" />
+    <Folder Include="wp-includes\js\crop" />
+    <Folder Include="wp-includes\js\imgareaselect" />
+    <Folder Include="wp-includes\js\jcrop" />
+    <Folder Include="wp-includes\js\jquery" />
+    <Folder Include="wp-includes\js\jquery\ui" />
+    <Folder Include="wp-includes\js\mediaelement" />
+    <Folder Include="wp-includes\js\plupload" />
+    <Folder Include="wp-includes\js\swfupload" />
+    <Folder Include="wp-includes\js\swfupload\plugins" />
+    <Folder Include="wp-includes\js\thickbox" />
+    <Folder Include="wp-includes\js\tinymce" />
+    <Folder Include="wp-includes\js\tinymce\langs" />
+    <Folder Include="wp-includes\js\tinymce\plugins" />
+    <Folder Include="wp-includes\js\tinymce\plugins\directionality" />
+    <Folder Include="wp-includes\js\tinymce\plugins\fullscreen" />
+    <Folder Include="wp-includes\js\tinymce\plugins\inlinepopups" />
+    <Folder Include="wp-includes\js\tinymce\plugins\inlinepopups\skins" />
+    <Folder Include="wp-includes\js\tinymce\plugins\inlinepopups\skins\clearlooks2" />
+    <Folder Include="wp-includes\js\tinymce\plugins\inlinepopups\skins\clearlooks2\img" />
+    <Folder Include="wp-includes\js\tinymce\plugins\media" />
+    <Folder Include="wp-includes\js\tinymce\plugins\media\css" />
+    <Folder Include="wp-includes\js\tinymce\plugins\media\js" />
+    <Folder Include="wp-includes\js\tinymce\plugins\paste" />
+    <Folder Include="wp-includes\js\tinymce\plugins\paste\js" />
+    <Folder Include="wp-includes\js\tinymce\plugins\spellchecker" />
+    <Folder Include="wp-includes\js\tinymce\plugins\spellchecker\classes" />
+    <Folder Include="wp-includes\js\tinymce\plugins\spellchecker\classes\utils" />
+    <Folder Include="wp-includes\js\tinymce\plugins\spellchecker\css" />
+    <Folder Include="wp-includes\js\tinymce\plugins\spellchecker\img" />
+    <Folder Include="wp-includes\js\tinymce\plugins\spellchecker\includes" />
+    <Folder Include="wp-includes\js\tinymce\plugins\tabfocus" />
+    <Folder Include="wp-includes\js\tinymce\plugins\wordpress" />
+    <Folder Include="wp-includes\js\tinymce\plugins\wordpress\img" />
+    <Folder Include="wp-includes\js\tinymce\plugins\wpdialogs" />
+    <Folder Include="wp-includes\js\tinymce\plugins\wpdialogs\js" />
+    <Folder Include="wp-includes\js\tinymce\plugins\wpeditimage" />
+    <Folder Include="wp-includes\js\tinymce\plugins\wpeditimage\css" />
+    <Folder Include="wp-includes\js\tinymce\plugins\wpeditimage\img" />
+    <Folder Include="wp-includes\js\tinymce\plugins\wpeditimage\js" />
+    <Folder Include="wp-includes\js\tinymce\plugins\wpfullscreen" />
+    <Folder Include="wp-includes\js\tinymce\plugins\wpfullscreen\css" />
+    <Folder Include="wp-includes\js\tinymce\plugins\wpgallery" />
+    <Folder Include="wp-includes\js\tinymce\plugins\wpgallery\img" />
+    <Folder Include="wp-includes\js\tinymce\plugins\wplink" />
+    <Folder Include="wp-includes\js\tinymce\plugins\wpview" />
+    <Folder Include="wp-includes\js\tinymce\themes" />
+    <Folder Include="wp-includes\js\tinymce\themes\advanced" />
+    <Folder Include="wp-includes\js\tinymce\themes\advanced\img" />
+    <Folder Include="wp-includes\js\tinymce\themes\advanced\js" />
+    <Folder Include="wp-includes\js\tinymce\themes\advanced\skins" />
+    <Folder Include="wp-includes\js\tinymce\themes\advanced\skins\default" />
+    <Folder Include="wp-includes\js\tinymce\themes\advanced\skins\default\img" />
+    <Folder Include="wp-includes\js\tinymce\themes\advanced\skins\highcontrast" />
+    <Folder Include="wp-includes\js\tinymce\themes\advanced\skins\o2k7" />
+    <Folder Include="wp-includes\js\tinymce\themes\advanced\skins\o2k7\img" />
+    <Folder Include="wp-includes\js\tinymce\themes\advanced\skins\wp_theme" />
+    <Folder Include="wp-includes\js\tinymce\themes\advanced\skins\wp_theme\img" />
+    <Folder Include="wp-includes\js\tinymce\utils" />
+    <Folder Include="wp-includes\pomo" />
+    <Folder Include="wp-includes\SimplePie" />
+    <Folder Include="wp-includes\SimplePie\Cache" />
+    <Folder Include="wp-includes\SimplePie\Content" />
+    <Folder Include="wp-includes\SimplePie\Content\Type" />
+    <Folder Include="wp-includes\SimplePie\Decode" />
+    <Folder Include="wp-includes\SimplePie\Decode\HTML" />
+    <Folder Include="wp-includes\SimplePie\HTTP" />
+    <Folder Include="wp-includes\SimplePie\Net" />
+    <Folder Include="wp-includes\SimplePie\Parse" />
+    <Folder Include="wp-includes\SimplePie\XML" />
+    <Folder Include="wp-includes\SimplePie\XML\Declaration" />
+    <Folder Include="wp-includes\Text" />
+    <Folder Include="wp-includes\Text\Diff" />
+    <Folder Include="wp-includes\Text\Diff\Engine" />
+    <Folder Include="wp-includes\Text\Diff\Renderer" />
+    <Folder Include="wp-includes\theme-compat" />
+  </ItemGroup>
+</Project>

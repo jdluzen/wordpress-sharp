@@ -10,11 +10,19 @@ namespace WordPress_Sharp.Web.Build
     {
         static void Main(string[] args)
         {
+            string wpRoot = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "..", "WordPress-Sharp.Web");
             List<string> phpcArgs = new List<string>
             {
                 "/target:web",
-                string.Format("/recurse:{0}", Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "..", "WordPress-Sharp.Web")),
-
+                string.Format("/recurse:{0}", wpRoot),
+                string.Format("/root:{0}", wpRoot),
+                "/static+",
+                string.Format("/skip:{0}", Path.Combine(wpRoot, "wp-config-sample.php")),
+#if DEBUG
+                "/debug+",
+#else
+                "/debug-",
+#endif
             };
             Process phpc = new Process
             {

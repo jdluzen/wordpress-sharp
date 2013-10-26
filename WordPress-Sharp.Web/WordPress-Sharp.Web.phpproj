@@ -168,6 +168,9 @@
     <Compile Include="wp-admin\includes\class-wp-themes-list-table.php">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="wp-admin\includes\class-wp-upgrader-skins.php">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="wp-admin\includes\class-wp-upgrader.php">
       <SubType>Code</SubType>
     </Compile>
@@ -897,6 +900,9 @@
     <Compile Include="wp-includes\cron.php">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="wp-includes\date.php">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="wp-includes\default-constants.php">
       <SubType>Code</SubType>
     </Compile>
@@ -1433,6 +1439,15 @@
     <Content Include="wp-admin\css\wp-admin.min.css">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="wp-admin\images\about-globe-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\about-search-2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\images\about-updates-2x.png">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="wp-admin\images\align-center-2x.png">
       <SubType>Content</SubType>
     </Content>
@@ -1689,6 +1704,12 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="wp-admin\images\yes.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\about.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-admin\js\about.min.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="wp-admin\js\accordion.js">
@@ -2034,6 +2055,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="wp-content\themes\twentytwelve\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\certificates\ca-bundle.crt">
       <SubType>Content</SubType>
     </Content>
     <Content Include="wp-includes\css\admin-bar-rtl.css">
@@ -3173,6 +3197,15 @@
     <Content Include="wp-includes\js\wplink.min.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="wp-includes\js\zxcvbn-async.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\zxcvbn-async.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="wp-includes\js\zxcvbn.min.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="wp-includes\wlwmanifest.xml">
       <SubType>Content</SubType>
     </Content>
@@ -3206,6 +3239,7 @@
     <Folder Include="wp-content\themes\twentytwelve\languages" />
     <Folder Include="wp-content\themes\twentytwelve\page-templates" />
     <Folder Include="wp-includes" />
+    <Folder Include="wp-includes\certificates" />
     <Folder Include="wp-includes\css" />
     <Folder Include="wp-includes\ID3" />
     <Folder Include="wp-includes\images" />
